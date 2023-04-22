@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enemy Squash</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="scoreBoard">Score</div>
+    <form action="" method="get">
+      <h1><span id="gameTitle">Enemy Squash</span></h1>
+      <select name="difficult" id="difficulty">
+        <option value="Easy">Novice</option>
+        <option value="Medium">Normal</option>
+        <option value="Hard">Expert</option>
+        <option value="Insane">Insane</option>
+      </select>
+      <input type="submit" value="Play" />
+    </form>
+    <div class="myGame"></div>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+    integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="./index.js"></script>
+</html>

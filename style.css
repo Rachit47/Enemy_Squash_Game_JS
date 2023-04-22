@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap");
+.myGame {
+  height: 100vh;
+}
+canvas {
+  background-color: rgb(49, 49, 49);
+  max-width: 100%;
+  cursor: crosshair;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#gameTitle {
+  background-clip: text;
+  background-color: #21d4fd;
+  background-color: #ff3cac;
+  background-image: linear-gradient(
+    225deg,
+    #d03859 0%,
+    #784ba0 50%,
+    #2b86c5 100%
+  );
+
+  font-family: "Orbitron";
+  font-size: 5vw;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  border-radius: 10px;
+}
+.scoreBoard {
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  font: 600 1.5vmax "Orbitron";
+  color: white;
+  display: none;
+}
+form {
+  /* background-color: rgb(57, 49, 101); */
+  background-image: url("./4561977.jpg");
+  background-size: cover;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  /*transform: translateX(-50%) translateY(-50%);*/
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+}
+form > select,
+form select option {
+  padding: 2vmax;
+  margin-top: 20px;
+  width: 20vw;
+  text-align: center;
+  font-size: 2vmax;
+  background-image: linear-gradient(
+    to right,
+    #051937,
+    #004671,
+    #007998,
+    #00ae9d,
+    #1bdf83
+  );
+  font-family: "Orbitron";
+  outline: none;
+  transition: all 0.5s;
+  border: none;
+}
+form > input {
+  margin: 2vmax;
+  padding: 2vmax;
+  width: 20vw;
+  cursor: pointer;
+  border: none;
+  color: white;
+  transition: all 0.5s;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 25%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  font-size: 2vmax;
+  font-family: "Orbitron";
+  outline: none;
+}
+
+form > select:hover {
+  box-shadow: 0 0 10px white;
+}
+form > input:hover {
+  background-color: rgb(135, 220, 93);
+}
+
+.gameover {
+  background-color: rgba(122, 122, 122, 0.045);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  height: 100vh;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gameover > button {
+  padding: 2vmax;
+  border: 2px solid rgb(255, 255, 255);
+  cursor: pointer;
+  width: 10vw;
+  background-color: white;
+  font: 900 1.8vmax "Orbitron";
+  transition: all 0.5s;
+}
+.gameover > button:hover {
+  background-color: rgb(30, 30, 34);
+  color: white;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+.gameover > div {
+  margin: 2vmax;
+  color: white;
+  font: 600 1.2vmax "Orbitron";
+}
